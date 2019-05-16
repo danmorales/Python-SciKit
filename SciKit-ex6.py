@@ -54,11 +54,9 @@ y_max_s = Xs[:, 1].max() + 1
 y_min_p = Xp[:, 1].min() - 1
 y_max_p = Xp[:, 1].max() + 1
 
-xx_s, yy_s = np.meshgrid(np.arange(x_min_s, x_max_s, h),
-                     np.arange(y_min_s, y_max_s, h))
+xx_s, yy_s = np.meshgrid(np.arange(x_min_s, x_max_s, h), np.arange(y_min_s, y_max_s, h))
                      
-xx_p, yy_p = np.meshgrid(np.arange(x_min_p, x_max_p, h),
-                     np.arange(y_min_p, y_max_p, h))
+xx_p, yy_p = np.meshgrid(np.arange(x_min_p, x_max_p, h), np.arange(y_min_p, y_max_p, h))
 
 titulos = ["RBF isotrópica", "RBF anisotrópica"]
 
@@ -83,12 +81,11 @@ for i, clf in enumerate((gpc_isotropico_s, gpc_anisotropico_s)):
     plt.ylim(yy_s.min(), yy_s.max())
     plt.xticks(())
     plt.yticks(())
-    plt.title("%s, LML: %.3f" %
-              (titulos[i], clf.log_marginal_likelihood(clf.kernel_.theta)))
+    plt.title("%s, LML: %.3f" % (titulos[i], clf.log_marginal_likelihood(clf.kernel_.theta)))
 
 plt.tight_layout()
 plt.show()
-savefig("Figs/GPC-Sepala.png",dpi=100)
+savefig("Figs/Iris-GPC-Sepala.png",dpi=100)
 
 plt.figure(figsize=(10, 5))
 
@@ -111,9 +108,8 @@ for i, clf in enumerate((gpc_isotropico_p, gpc_anisotropico_p)):
     plt.ylim(yy_p.min(), yy_p.max())
     plt.xticks(())
     plt.yticks(())
-    plt.title("%s, LML: %.3f" %
-              (titulos[i], clf.log_marginal_likelihood(clf.kernel_.theta)))
+    plt.title("%s, LML: %.3f" % (titulos[i], clf.log_marginal_likelihood(clf.kernel_.theta)))
 
 plt.tight_layout()
 plt.show()
-savefig("Figs/GPC-Petala.png",dpi=100)
+savefig("Figs/Iris-GPC-Petala.png",dpi=100)

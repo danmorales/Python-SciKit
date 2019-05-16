@@ -86,12 +86,12 @@ np.set_printoptions(precision=2)
 plot_confusion_matrix(y_test, y_pred, classes=classe, title='Matriz de confusão não normalizada')
 plt.tight_layout()
 plt.show()
-savefig("Figs/MatrizConfusaoNaoNormalizada.png",dpi=100)
+savefig("Figs/Iris-MatrizConfusaoNaoNormalizada.png",dpi=100)
 
 #Graficando a matriz de confusão normalizada
 plot_confusion_matrix(y_test, y_pred, classes=classe, normalize=True, title='Matriz de confusão normalizada')
 plt.tight_layout()
 plt.show()
-savefig("Figs/MatrizConfusaoNormalizada.png",dpi=100)
+savefig("Figs/Iris-MatrizConfusaoNormalizada.png",dpi=100)
 
 

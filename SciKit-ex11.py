@@ -82,7 +82,7 @@ plt.title('Classificação das três classes com Kernel definido pelo usuário (
 plt.axis('tight')
 plt.tight_layout()
 plt.show()
-savefig("Figs/SVM-Sepala-CustomKernel.png",dpi=100)
+savefig("Figs/Iris-SVM-Sepala-CustomKernel.png",dpi=100)
 
 #Pétala
 plt.figure(figsize=(10, 6))
@@ -94,4 +94,4 @@ plt.title('Classificação das três classe com Kernel definido pelo usuário (P
 plt.axis('tight')
 plt.tight_layout()
 plt.show()
-savefig("Figs/SVM-Petala-CustomKernel.png",dpi=100)
+savefig("Figs/Iris-SVM-Petala-CustomKernel.png",dpi=100)

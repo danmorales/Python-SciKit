@@ -32,9 +32,9 @@ colors = ['navy', 'turquoise', 'darkorange']
 lw = 2
 
 for color, i, nomes in zip(colors, [0, 1, 2], nomes):
-    plt.scatter(X_r2[y == i, 0], X_r2[y == i, 1], alpha=.8, color=color, label=nomes)
+    plt.scatter(X_r2[Y == i, 0], X_r2[Y == i, 1], alpha=.8, color=color, label=nomes)
 plt.legend(loc='best', shadow=False, scatterpoints=1)
 plt.title('LDA do arranjo Iris')
 plt.show()
-savefig("Figs/LDA.png",dpi=100)
+savefig("Figs/Iris-LDA.png",dpi=100)
 

@@ -34,7 +34,7 @@ pca.fit(X)
 X = pca.transform(X)
 
 for name, label in [('Setosa', 0), ('Versicolour', 1), ('Virginica', 2)]:
-    ax.text3D(X[y == label, 0].mean(), X[y == label, 1].mean() + 1.5, X[y == label, 2].mean(), name,
+    ax.text3D(X[Y == label, 0].mean(), X[Y == label, 1].mean() + 1.5, X[Y == label, 2].mean(), name,
               horizontalalignment='center', bbox=dict(alpha=.5, edgecolor='w', facecolor='w'))
 
 Y = np.choose(Y, [1, 2, 0]).astype(np.float)
@@ -45,4 +45,4 @@ ax.w_yaxis.set_ticklabels([])
 ax.w_zaxis.set_ticklabels([])
 
 plt.show()
-savefig("Figs/PCA-3D.png",dpi=100)
+savefig("Figs/Iris-PCA-3D.png",dpi=100)

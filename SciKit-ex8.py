@@ -117,7 +117,7 @@ for i, color in zip(clf_s.classes_, cores):
     plot_hyperplano(i, color)
 plt.legend()
 plt.show()
-savefig("Figs/SGD-Sepala.png",dpi=100)
+savefig("Figs/Iris-SGD-Sepala.png",dpi=100)
 
 plt.figure(2, figsize=(8, 6))
 
@@ -150,4 +150,4 @@ for i, color in zip(clf_p.classes_, cores):
     plot_hyperplano2(i, color)
 plt.legend()
 plt.show()
-savefig("Figs/SGD-Petala.png",dpi=100)
+savefig("Figs/Iris-SGD-Petala.png",dpi=100)
